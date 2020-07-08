@@ -2,7 +2,7 @@ body{
     font-family: sans-serif;
 }
 
-nav{
+nav {
     margin-bottom: 16px;
     background: #fa923f;
     padding: 8px 0;
@@ -14,8 +14,26 @@ a {
     margin: 10px;
 }
 
+a.active {
+color: #521751;
+}
+
+/*Não recomendado usar not, melhor usar como abaixo
+a:not(.active) {
+    color: blue;
+}*/
+
+a {
+    color: blue;
+}
+
+
 .main-section {
     height: 800px;
-    border: 10px solid #cccccc;
+    border: 1px solid #cccccc;
     padding: 16px;
+}
+
+.highlighted {
+border: 2px solid #fa923f;
 }

@@ -16,12 +16,28 @@ body{
 
 .section-title{
     color: #2ddf5c;
+    text-align: center;
 }
 #product-overiew h1{
     color: white;
     font-family: 'Anton', sans-serif;
 }
 
+.plan {
+    background: #d5ffdc;
+    text-align: center;
+    padding: 16PX;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.plan--highlighted{
+    background: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px;
+}
 /*h1{
     color: white;
     font-family: sans-serif;
