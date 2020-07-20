@@ -7,32 +7,15 @@ body{
     margin: 0;
 }
 
-.button {
-    background: #0e4f1f;
-    color: white;
-    font: inherit;
-    border: 1.5px solid #0e4f1f;
-    padding: 8px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.button:hover,
-.button:active {
-    background: white;
-    color: #0e4f1f;
-}
-
-.button:focus {
-    outline: none;
-}
-
 .main-header{
-    width: 100%;   
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;   
     background: #2ddf5c;
     padding: 8px 16px;
 }
+
 .main-header > div {
 display: inline-block;
 vertical-align: middle;
@@ -109,4 +92,26 @@ vertical-align: middle;
 .main-footer__link a:hover,
 .main-footer__link a:active {
     color: #ccc;
+}
+
+
+.button {
+    background: #0e4f1f;
+    color: white;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background: white;
+    color: #0e4f1f;
+}
+
+.button:focus {
+    outline: none;
 }
