@@ -18,8 +18,8 @@ body{
 }
 
 .main-header > div {
-display: inline-block;
-vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .main-header_brand{
