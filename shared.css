@@ -16,7 +16,6 @@ body{
     padding: 8px 16px;
     z-index: 1;
 }
-
 .main-header > div {
     display: inline-block;
     vertical-align: middle;
@@ -27,6 +26,14 @@ body{
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
+    /*width: 20px;*/
+    height: 22px;
+    display: inline-block;
+}
+
+.main-header_brand img {
+    height: 100%;
+/*width: 100%;*/
 }
 
 .main-nav{
