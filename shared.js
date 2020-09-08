@@ -18,10 +18,21 @@ for (var i = 0; i < selectPlanButtons.length; i++) {
     });
 }
 
+backdrop.addEventListener('click', function () {
+    backdrop.style.display = 'none';
+    modal.style.display = 'none';
+})
+
 selectModalNegative.addEventListener('click', function () {
     backdrop.style.display = 'none';
     modal.style.display = 'none';
 })
+
+
+function closeModal () {
+    backdrop.style.display = 'none';
+    modal.style.display = 'none';
+}
 
 
 
