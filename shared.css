@@ -7,6 +7,11 @@ body{
     margin: 0;
 }
 
+main {
+min-height: calc(100vh - 3.5rem - 8rem);
+margin-top: 3.5rem;
+}
+
 .backdrop {
     position: fixed;
     display: none;
@@ -54,35 +59,35 @@ body{
     margin: 0.6rem 0;
 }
 
-.main-header_brand{
+.main-header__brand{
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.3rem; 
+    height: 2.5rem; 
     display: inline-block;
     vertical-align: middle;
-}
+} 
  
-.main-header_brand img {
-    height: 2.5rem;
+.main-header__brand img {
+    height: 100%;
 }
 
 .main-nav{
     display: none;
 }
 
-.main-nav_item{
+.main-nav__item{
     display: inline-block;
     margin: 0 1rem;
 }
 
-.main-nav_items{
+.main-nav__items{
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.main-nav_item a,
+.main-nav__item a,
 .mobile-nav__item a {
     text-decoration: none;
     color: #0e4f1f;
@@ -90,13 +95,13 @@ body{
     padding: 0.2rem 0;
 }
 
-.main-nav_item a:hover, 
-.main-nav_item a:active{
+.main-nav__item a:hover, 
+.main-nav__item a:active{
     color: white;
     border-bottom: 5px solid white;
 }
 
-.main-nav_item--cta a,
+.main-nav__item--cta a,
 .mobile-nav__item--cta a {
     color: white;
     background: #ff1b68;
@@ -104,8 +109,8 @@ body{
     border-radius: 8px;
 }
 
-.main-nav_item--cta a:hover,
-.main-nav_item--cta a:active
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active {
     color: #ff1b68;
