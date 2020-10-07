@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+html {
+    background: #b3b3b3;
+    padding: 5px;
+}
+
+body {
+    background: #b3b3b3;
+    padding: 5px;
+    margin: 0;
+}
+
+.flex-container {
+    background: #b3b3b3;
+    padding: 5px;
+    border: 5px solid black;
+    display: flex;
+    /*flex-direction: row-reverse or colum-reverse => para inverter a ordem em que é exibido; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*flex-flow: row wrap;  ==> é o shorthand dos 2 acima */
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    /*justify-content: parte do eixo principal(main) e o align-items: parte do eixo transversal(cross) pq pode variar a direção conforme a especificação do flex-direction: row or column;*/
+}
+
+.item-1 {
+    background: #ff7300;
+    color: white;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.item-2 {
+    background: #ff9640;
+    color: white;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+    width: 250px;
+    font-size: 1.8rem;
+}
+
+.item-3 {
+    background: #ff9640;
+    color: white;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+    height: 250px;
+}
+
+.item-4 {
+    background: #ff9640;
+    color: white;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.item-5 {
+    background: #d3c0b1;
+    color: white;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+    width: 350px;
+}
+
+.item-6 {
+    background: #d3c0b1;
+    color: white;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+    width: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
