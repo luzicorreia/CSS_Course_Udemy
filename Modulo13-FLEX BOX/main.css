@@ -27,6 +27,7 @@ body {
     justify-content: center;
     align-content: center;
     /*justify-content: parte do eixo principal(main) e o align-items: parte do eixo transversal(cross) pq pode variar a direção conforme a especificação do flex-direction: row or column;*/
+    justify-content: flex-start;
 }
 
 .item-1 {
