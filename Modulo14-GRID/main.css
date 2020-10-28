@@ -1,16 +1,21 @@
 .container {
     margin: 20px;
     display: grid;
-    /*height: 200px; */
+    height: 800px; 
+    width: 800px;
     /*grid-template-columns: 200px 5rem 20% auto; */
-    grid-template-columns: repeat(4, 25%);  /* 4 colunas de 25% cada) */
-    grid-template-rows: 5rem minmax(10px, 200px) 100px;   /* outra forma: 5rem 2rem; */
+    grid-template-columns: repeat(4, 20%);  /* 4 colunas de 20% cada) */
+    grid-template-rows: 5rem minmax(10px, 20rem) 100px;   /* outra forma: 5rem 2rem; */
     /* grid-column-gap: 20px;
     /* grid-row-gap: 10px; */
     grid-gap: 10px;
     grid-template-areas: "header header header header"
                           ". . main main"
                           "footer footer footer footer";
+    justify-items: stretch;  /* default */
+    align-items: stretch; /*default */
+    justify-content: center;  /* trabalha no eixo */
+    align-content: end;
 }
 
 .el1 {
@@ -21,10 +26,10 @@
     background: rgba(255, 0, 0, 0.5);
     /*grid-column-start: 1;
     grid-column-end: -1;  /* -1 vai para ultima coluna, -2 penultima, etc. */
-    grid-column: 1 / -1; /* shorthand=usar com '/' */
+   /* grid-column: 1 / -1; /* shorthand=usar com '/' */
     /*grid-row-start: 2;
     grid-row-end: span 1; /* span 1 = expande 1 linha (default). Serve para informar qtas. linhas vai ocupar */
-    grid-row: 2 / span 1;
+    /*grid-row: 2 / span 1;*/
     z-index: 10;
     grid-area: main;
 }
@@ -35,9 +40,11 @@
     grid-column-end: span 3;
     grid-row-start: 1;
     grid-row-end: 3;*/
-    grid-area: 1 / 2 / 3 / span 3;   /* a ordem do shorthand  de todas as linhas e colunas é LINHA+COLUNA debaixo pr cima */
+    /*grid-area: 1 / 2 / 3 / span 3;   /* a ordem do shorthand  de todas as linhas e colunas é LINHA+COLUNA debaixo pr cima */
+    grid-area: header;
 }
 
 .el4 {
     background: rgba(0, 4, 255, 0.5);
+    grid-area: footer;
 }
