@@ -1,0 +1,32 @@
+.container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 10rem); /* repeat(auto-fill ou auto-fit, 15rem) = fill:preenchimento automatico e fit:full + centraliza) */
+    grid-template-rows: 20rem; /* a primeira linha terá 20rem e as demais o grid automatico */
+    justify-content: center;
+    grid-gap: 1.5rem;
+    grid-auto-rows: minmax(8rem, auto);
+    grid-auto-flow: row dense;   /* dense: reaproveita o espaço que sobra. Mas, CUIDADO!! Não respeita o DOM */ 
+    grid-auto-columns: 5rem;
+}
+
+.quote {
+    border: 1px solid #fa923f;
+    background: #ffbd87;
+    font-family: sans-serif;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.quote:nth-of-type(2) {
+    grid-column: span2;
+}
+
+.quote--featured {
+    border: #ff4213;
+    background: #ff8f87;
+    grid-column: span 2;
+}
+
+
+

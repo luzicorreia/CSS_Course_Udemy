@@ -1,25 +1,35 @@
 .container {
     margin: 20px;
     display: grid;
-    height: 800px; 
-    width: 800px;
     /*grid-template-columns: 200px 5rem 20% auto; */
     grid-template-columns: repeat(4, 20%);  /* 4 colunas de 20% cada) */
-    grid-template-rows: 5rem minmax(10px, 20rem) 100px;   /* outra forma: 5rem 2rem; */
+    /*grid-template-rows: 5rem minmax(10px, 20rem) 100px;   /* outra forma: 5rem 2rem; */
+    grid-template-rows: [hd-start] 5rem [hd-end row-2start] minmax(10px, 20rem) 100px;
     /* grid-column-gap: 20px;
     /* grid-row-gap: 10px; */
     grid-gap: 10px;
     grid-template-areas: "header header header header"
-                          ". . main main"
+                          ". side main main"
                           "footer footer footer footer";
-    justify-items: stretch;  /* default */
-    align-items: stretch; /*default */
-    justify-content: center;  /* trabalha no eixo */
-    align-content: end;
+    justify-items: stretch;  /* ITEMS: movimenta os itens do grid + stretch = default */
+    align-items: stretch;    /* ITEMS: movimenta os itens do grid + stretch =default */
+    /* justify-content: movimenta todo o grid + eixo x*/
+    /* align-content: movimenta todo o grid + eixo y*/
+}
+
+@media (max-width:40rem) {
+    .container {
+        grid-template-rows: [hd-start] 5rem [hd-end row-2start] minmax(10px, 20rem) 150px minmax(10px, 20rem) 100px;
+        grid-template-areas: "header header header header"
+                             "main main main main"
+                             "side side side side"
+                             "footer footer footer footer";
+    }
 }
 
 .el1 {
     background: rgba(255, 154, 72, 0.5);
+    grid-area: side;
 }
 
 .el2 {
