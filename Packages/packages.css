@@ -42,7 +42,7 @@ main {
      color: white;
      background: #ff5454;
      padding: 0.5rem;
-     transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+     transform: rotateZ(45deg) translate(3.5rem -1rem);  /* 1º valor = eixo x e 2º valor = eixo y) */
      transform-origin: center;
      width: 12rem;
      text-align: center;
