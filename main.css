@@ -161,7 +161,9 @@
 
 .modal {
     position: fixed;
-    display: none;
+    opacity: 0;   /* substituiu o display:nome. Opacity:0 = invisivel; Opacity:1 = visivel */
+    transform: translateY(-3rem);
+    transition: opacity 200ms ease-out, transform 500ms ease-out; /* ease-in=começa rapido e termina devagar; ease-out=contrário, se informar tempo (exemplo 1s, vai demorar (ter um delay) 1s para transação começar  */
     z-index: 200;
     top: 20%;
     left: 30%;
