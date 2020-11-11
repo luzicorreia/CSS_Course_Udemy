@@ -18,6 +18,10 @@
     overflow: hidden;
 }
 
+#customer-1:hover .testimonial__image-container {
+    animation: flip-customer 1s ease-out forwards;
+}
+
 .testimonial__image {
     width: 100%;
     vertical-align: top;
@@ -83,4 +87,16 @@
     .testimonial__info {
         width: 30%;
     }
+}
+
+@keyframes flip-customer {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(160deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    } /*rotação button 'Starting Hosting' variando de 0 a 10 graus */
 }

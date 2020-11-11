@@ -112,6 +112,11 @@ main {
     border-bottom: 5px solid white;
 }
 
+.main-nav__item--cta {
+    animation: wiggle 200ms 3s 8 ease-out none;
+    /*nome da animação, tempo da animação, delay, qtd. e forma da animação(none, alternate, foward, backward ou running) */ 
+}
+
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
     color: white;
@@ -172,7 +177,8 @@ main {
 }
 
 .mobile-nav {
-    display: none;
+    transform: translateX(-100%);
+    transition: transform 300ms ease-out;  /* transform + transition=animação MENU do MOBILE */
     position: fixed;
     z-index: 101;
     top: 0;
@@ -245,4 +251,16 @@ main {
         flex-direction: row;
         justify-content: center;
      }
+}
+ 
+@keyframes wiggle {
+    10% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(10deg);
+    } /*rotação button 'Starting Hosting' variando de 0 a 10 graus */
 }
