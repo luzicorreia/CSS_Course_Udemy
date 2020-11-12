@@ -24,6 +24,7 @@ main {
 .package:hover, .package:active {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-color: #ff5454 !important;
+    animation: push-up 1s ease-out forwards;
 }
 
 .package a {
@@ -42,7 +43,7 @@ main {
      color: white;
      background: #ff5454;
      padding: 0.5rem;
-     transform: rotateZ(45deg) translate(3.5rem -1rem);  /* 1º valor = eixo x e 2º valor = eixo y) */
+     transform: rotateZ(45deg) translate(3.5rem, -1rem);  /* 1º valor = eixo x e 2º valor = eixo y) */
      transform-origin: center;
      width: 12rem;
      text-align: center;
@@ -108,4 +109,16 @@ main {
     #free:active {
         border-right-color: #ff5454;
     }
+}
+
+@keyframes push-up {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1.5rem);
+    }
+    100% {
+        transform: translateY(-1rem);
+    } /*Ao passar o mous,e no pacote, sobe na tela variando de 0 a 1-1rem (Negativo=subir; Positivo=descer) */
 }
